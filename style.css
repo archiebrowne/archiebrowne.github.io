@@ -34,7 +34,7 @@ body {
 .centre-container {
     background-color: beige;
     display: flex;
-    
+    border: 2px solid black;
     border-radius: 20px;
 }
 
@@ -61,12 +61,18 @@ body {
     background-color: #3498db;
     display: flex;
     flex-grow: 1;
-    border-radius: 20px;
+}
 
+.right-header {
+    border-bottom: 2px solid black; 
+    border-left: 2px solid black;;
+    border-radius: 0px 20px 0px 0px;
 }
 
 .right-body {
     height: 450px;
+    border-left: 2px solid black;
+    border-radius: 0px 0px 20px 0px;
 }
 
 .footer {
@@ -74,17 +80,23 @@ body {
     color: #fff;
 }
 
-
 .right-header > * {
     background-color: antiquewhite;
-    flex: 1;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: xx-large;
+    font-size: 50px;
     border-radius: 20px;
 }
 
+.right-header > *:nth-child(1) {
+    flex: 1;
+}
+
+.right-header > *:nth-child(2) {
+    width: 20px;
+}
 
 
 

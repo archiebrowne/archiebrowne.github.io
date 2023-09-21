@@ -38,19 +38,12 @@ body {
     border-radius: 20px;
 }
 
-.left, .right {
+.right {    
     height: 650px;
     background-color: black;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-}
-
-.left {
-    width: 250px;
-}
-
-.right {
     width: 750px;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +75,6 @@ body {
 
 .right-header > * {
     background-color: antiquewhite;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,14 +83,27 @@ body {
 }
 
 .right-header > *:nth-child(1) {
+    justify-content: flex-start;
     flex: 1;
 }
 
 .right-header > *:nth-child(2) {
-    width: 20px;
+    width: 100px;
+    
 }
 
+.content-links {
+    display: flex;
+    flex-direction: column;
 
+    list-style-type: none;
+}
+
+.content-links > * {
+    background-color: #fff;
+    flex-grow: 1;
+
+}
 
 
 

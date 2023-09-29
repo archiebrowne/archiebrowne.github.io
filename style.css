@@ -28,11 +28,6 @@ body {
     gap: 15px;
 }
 
-/* External Links */
-.github, .linkedin, .cv {
-    
-}
-
 /* Link to GitHub */ 
 .github {
     width: 50px;
@@ -50,8 +45,6 @@ body {
     text-decoration: none;
     color: black;
     font-size: larger;
-
-
 }
 
 .header > *:nth-child(3):hover {
@@ -62,7 +55,7 @@ body {
 /* Div between the header and footer */
 .main-content {
     flex-grow: 1; 
-    background-color: #ecf0f1;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +73,7 @@ body {
 /* Div containing content on right of centre-container */
 .right {    
     height: 650px;
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -91,7 +84,7 @@ body {
 
 .right-header, .right-body {
     width: 100%;
-    background-color: #3498db;
+
     display: flex;
     flex-grow: 1;
 }
@@ -112,8 +105,8 @@ body {
 }
 
 .footer {
-    background-color: #3498db;
-    color: #fff;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* The ul withing the right header containing both the name and pfp */
@@ -124,15 +117,25 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    background-color: antiquewhite;
+
     align-items: center;
-    font-size: 50px;
     border-radius: 20px;
 }
 
 /* List item containing 'Archibald Browne' */
 .right-header > ul > *:nth-child(1) {
-    padding-left: 30px;
+    font-size: 60px;
+    padding-left: 25px;
+}
+
+/* List item containing emoji */
+.right-header > ul > *:nth-child(2) {
+    padding-right: 40px;
+}
+
+.right-header > ul > li > p {
+    font-size: 65px;
+    margin: 0;
 }
 
 /* ul containing scrollable content divs */
@@ -155,5 +158,16 @@ body {
     border-bottom: 2px solid black; 
 }
 
+/* University email addess */
+.footer > a {
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+}
+
+.footer > a:hover {
+    text-decoration: underline;
+    color: black;
+}
 
 

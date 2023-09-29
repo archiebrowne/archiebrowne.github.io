@@ -3,7 +3,8 @@ body {
     width: 100vw;
     overflow: hidden;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida', monospace;
+    font-weight: 600;
 }
 
 /* Entire page, made to fill browser size */
@@ -20,8 +21,42 @@ body {
 
 /* Contains links to GitHub, LinkedIn etc */
 .header {
-    background-color: #3498db;
-    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 15px 0px 0px;
+    gap: 15px;
+}
+
+/* External Links */
+.github, .linkedin, .cv {
+    
+}
+
+/* Link to GitHub */ 
+.github {
+    width: 50px;
+    height: auto;
+}
+
+/* Link to LinkedIn */
+.linkedin {
+    width: 50px;
+    height: auto;
+}
+
+/* Link to CV */
+.header > *:nth-child(3) {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+
+
+}
+
+.header > *:nth-child(3):hover {
+    text-decoration: underline;
+    color: black;
 }
 
 /* Div between the header and footer */

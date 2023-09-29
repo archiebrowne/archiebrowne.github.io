@@ -6,6 +6,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Entire page, made to fill browser size */
 .container {
     display: flex;
     flex-direction: column;
@@ -17,11 +18,13 @@ body {
     text-align: center;
 }
 
+/* Contains links to GitHub, LinkedIn etc */
 .header {
     background-color: #3498db;
     color: #fff;
 }
 
+/* Div between the header and footer */
 .main-content {
     flex-grow: 1; 
     background-color: #ecf0f1;
@@ -30,6 +33,7 @@ body {
     align-items: center;
 }
 
+/* The middle rectangle */
 .centre-container {
     background-color: beige;
     display: flex;
@@ -38,6 +42,7 @@ body {
     overflow: auto;
 }
 
+/* Div containing content on right of centre-container */
 .right {    
     height: 650px;
     background-color: black;
@@ -56,6 +61,7 @@ body {
     flex-grow: 1;
 }
 
+/* Div containing a ul */
 .right-header {
     display: flex;
     border-bottom: 2px solid black; 
@@ -63,6 +69,7 @@ body {
     border-radius: 0px 20px 0px 0px;
 }
 
+/* Descrption / overview goes here */
 .right-body {
     height: 450px;
     border-left: 2px solid black;
@@ -74,7 +81,8 @@ body {
     color: #fff;
 }
 
-.right-header > * {
+/* The ul withing the right header containing both the name and pfp */
+.right-header > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -87,9 +95,12 @@ body {
     border-radius: 20px;
 }
 
+/* List item containing 'Archibald Browne' */
+.right-header > ul > *:nth-child(1) {
+    padding-left: 30px;
+}
 
-
-
+/* ul containing scrollable content divs */
 .content-links {
     list-style-type: none;
     padding: 0;
@@ -101,6 +112,7 @@ body {
     margin: 0;
 }
 
+/* Content divs */
 .content-links > * {
     background-color: #fff;
     height: 71px;

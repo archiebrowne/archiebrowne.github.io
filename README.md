@@ -1,2 +1,2 @@
 # my website
-a continuous work in progress, view it live [here](../archiebrowne.github.io)
+a continuous work in progress, view it live [here](https://archiebrowne.github.io)

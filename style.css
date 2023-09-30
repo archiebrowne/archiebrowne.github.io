@@ -67,7 +67,6 @@ body {
     display: flex;
     border: 2px solid black;
     border-radius: 20px;
-    overflow: auto;
 }
 
 /* Div containing content on right of centre-container */

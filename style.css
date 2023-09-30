@@ -63,7 +63,7 @@ body {
 
 /* The middle rectangle */
 .centre-container {
-    background-color: beige;
+    
     display: flex;
     border: 2px solid black;
     border-radius: 20px;
